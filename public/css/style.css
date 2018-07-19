@@ -1,0 +1,25 @@
+body{
+    background-color: #eeeeee;
+}
+.list{
+    background-color: #fff;
+    box-shadow: 0 0 8px #6c757d;
+}
+.list__header{
+    border-bottom: 1px solid #ccc;
+}
+.list__item{
+    border-bottom: 1px solid #ccc;
+}
+.list__check{
+    float: left;
+}
+.list__name{
+    border-left: 2px solid #c82333;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+.list__input{
+    border: none;
+    outline: none;
+}
