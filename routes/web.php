@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TaskController@index')->name('index');;
+Route::post('/done/{id}', 'TaskController@done')->where('id', '[0-9]+')->name('done');
+Route::post('/undone/{id}', 'TaskController@undone')->where('id', '[0-9]+')->name('undone');
+Route::post('/add', 'TaskController@add')->name('add');
